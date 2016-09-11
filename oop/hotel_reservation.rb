@@ -62,9 +62,9 @@ reservation2.add_a_fridge
 
 reservation2.add_a_crib
 
-reservation2.add_a_custom_amenity("microwave")
+reservation2.add_a_custom_amenity("extra cot")
 
-if reservation2.room_number == 316 && reservation2.amenities.include?("fridge") && reservation2.amenities.include?("crib") && reservation2.amenities.include?("microwave")
+if reservation2.room_number == 316 && reservation2.amenities.include?("fridge") && reservation2.amenities.include?("crib") && reservation2.amenities.include?("extra cot")
   result = "PASS"
 else
   result = "F"
