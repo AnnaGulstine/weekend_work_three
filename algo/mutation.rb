@@ -3,7 +3,17 @@
 # the first string, and false otherwise.
 
 def mutation?(base_word, mutation)
+	string1 = base_word
+	string2 = mutation
 
+	base_word_arr = string1.split("")
+	mutation_arr = string2.split("")
+
+	if (mutation_arr - base_word_arr).empty?
+		result = true
+	else
+		result = false
+	end
 end
 
 # Driver code - don't touch anything below this line.
